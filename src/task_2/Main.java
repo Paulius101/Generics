@@ -1,6 +1,5 @@
 package src.task_2;
 
-import src.task_2.interfaces.Medis;
 import src.task_2.medzio_tipai.lapuotis.medziai.Azuolas;
 import src.task_2.medzio_tipai.lapuotis.medziai.Berzas;
 import src.task_2.medzio_tipai.spygliuotis.Spygliuotis;
@@ -26,6 +25,7 @@ public class Main {
         ArrayList<Spygliuotis> spygliuociuSarasas = new ArrayList<>();
         Collections.addAll(spygliuociuSarasas, kadagys, egle, pusis);
 
+
         Berzas berzas1 = new Berzas();
         Berzas berzas2 = new Berzas();
         Berzas berzas3 = new Berzas();
@@ -44,7 +44,7 @@ public class Main {
         }
     }
 
-    private static void spygliuociuMiskas(ArrayList<Spygliuotis> list) {
+    private static void spygliuociuMiskas(ArrayList<? extends Spygliuotis> list) {
         System.out.println("Spygliuociu miskas:");
         for (Spygliuotis item : list) {
             item.turi();

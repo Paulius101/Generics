@@ -6,6 +6,8 @@ public class Egle extends Spygliuotis {
 
     @Override
     public void turi() {
-        System.out.println("Egle turi spyglius");
+        System.out.printf("Egle");
+        super.turi();
     }
 }
+
