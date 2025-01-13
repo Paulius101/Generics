@@ -21,8 +21,9 @@ public class Main {
         Double highestValue = 0.0;
         ListOfNumbers result = null;
         for (ListOfNumbers l : list) {
-            if (l.getAverage() > highestValue) {
-                highestValue = l.getAverage();
+            Double average = l.getAverage();
+            if (average > highestValue) {
+                highestValue = average;
                 result = l;
             }
         }
